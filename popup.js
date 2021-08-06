@@ -3,16 +3,17 @@ const timeSettings = {};
 let breakFlag = false;
 let startStop = document.querySelector('#startStop');
 let reset = document.querySelector('#reset');
-let option1 = document.querySelector('#option1');
-let option2 = document.querySelector('#option2');
+let session = document.getElementById('session');
 
-option1.addEventListener('click', function() {
-    initialSettings(1500, 300);
-});
-
-option2.addEventListener('click', () => {
-    initialSettings(3000, 600);
-});
+session.onchange = function() {
+   let temp = document.getElementById("session").value;
+   if (temp == '25_5'){
+       initialSettings(1500, 300);
+   }
+   else {
+       initialSettings(3000, 600);
+   }
+}
 
 reset.addEventListener('click', () => {
     getInitialTime();

@@ -13,10 +13,14 @@ body {
     top: 250px;
     right: 75px; 
 }
-#option2{
-    position: fixed;
-    top: 35px;
-    left: 8px;
+#session{
+    margin: 0;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 12px;
 }
 #label{
     margin: 0;
