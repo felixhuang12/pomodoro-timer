@@ -16,8 +16,8 @@ body {
 #session{
     margin: 0;
     position: absolute;
-    top: 8%;
-    left: 50%;
+    top: 5%;
+    right: -12%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 12px;
